@@ -9,13 +9,13 @@ if((navigator.browserLanguage || navigator.language || navigator.userLanguage) =
 <div>
 <a href="ja/">
 <div>
-<img src="image/hinomaru.png" alt="Japanese">
+<img src="images/hinomaru.png" alt="Japanese">
 <h2>日本語</h2>
 </div>
 </a>
 <a href="en/">
 <div>
-<img src="image/world.png" alt="English">
+<img src="images/world.png" alt="English">
 <h2>English</h2>
 </div>
 </a>
