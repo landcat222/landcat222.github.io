@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }} - {{ site.title.en }}</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="site-title"><a href="/en/">{{ site.title.en }}</a></h1>
+            <h2 id="site-subtitle">{{ site.subtitle.en }}</h2>
+            <hr>
+        </header>
+        <section>
+            <h1 id="page-title">{{ page.title }}</h1>
+            {{ content }}
+        </section>
+        <aside>This page uses <a href="https://translate.google.co.jp/" target="_blank">Google Translate</a> and <a href="https://www.deepl.com/translator" target="_blank">DeepL Translate</a>.</aside>
+    </body>
+</html>
