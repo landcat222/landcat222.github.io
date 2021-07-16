@@ -14,3 +14,7 @@ h1#site-title a {
 h1#page-title {
     font-size: 4em;
 }
+
+aside#trans {
+    text-align: right;
+}
