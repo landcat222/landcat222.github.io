@@ -10,3 +10,7 @@ h1#site-title a {
     text-decoration: none;
     color: black;
 }
+
+h1#page-title {
+    font-size: 4em;
+}
