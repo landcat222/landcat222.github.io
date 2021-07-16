@@ -6,10 +6,14 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <h1 id="site-title">{{ site.title.ja }}</h1>
-        <h2 id="site-subtitle">{{ site.subtitle.ja }}</h2>
-        <hr>
-        <h1 id="page-title">{{ page.title }}</h1>
-        {{ content }}
+        <header>
+            <h1 id="site-title">{{ site.title.ja }}</h1>
+            <h2 id="site-subtitle">{{ site.subtitle.ja }}</h2>
+            <hr>
+        </header>
+        <section>
+            <h1 id="page-title">{{ page.title }}</h1>
+            {{ content }}
+        </section>
     </body>
 </html>
