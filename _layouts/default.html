@@ -12,16 +12,16 @@
 {% else %}{{ site.subtitle.en }}
 {% endif %}
 {% endcapture %}
-<html lang="en">
+<html lang="{{ lang }}">
     <head>
         <meta charset="UTF-8">
-        <title>{{ page.title }} - {{ site.title.en }}</title>
+        <title>{{ page.title }} - {{ title }}</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <header>
-            <h1 id="site-title"><a href="/en/">{{ site.title.en }}</a></h1>
-            <h2 id="site-subtitle">{{ site.subtitle.en }}</h2>
+            <h1 id="site-title"><a href="/{{ lang }}/">{{ title }}</a></h1>
+            <h2 id="site-subtitle">{{ subtitle }}</h2>
             <hr>
         </header>
         <section>
