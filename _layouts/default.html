@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+{% assign lang = page.url | replace_first:"/" "" | split:"/" | first %}
+
+{% capture title %}
+{% if lang == 'ja' %}{{ site.title.ja }}
+{% else %}{{ site.title.en }}
+{% endif %}
+{% endcapture %}
+
+{% capture subtitle %}
+{% if lang == 'ja' %}{{ site.subtitle.ja }}
+{% else %}{{ site.subtitle.en }}
+{% endif %}
+{% endcapture %}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
