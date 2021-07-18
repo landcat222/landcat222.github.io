@@ -1,4 +1,4 @@
 ---
-layout: default-ja
+layout: default
 title: トップページ
 ---

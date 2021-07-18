@@ -1,4 +1,4 @@
 ---
-layout: default-en
+layout: default
 title: Top Page
 ---

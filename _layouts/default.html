@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% assign lang = page.url | replace_first:"/" "" | split:"/" | first %}
+
+{% capture title %}
+{% if lang == 'ja' %}{{ site.title.ja }}
+{% else %}{{ site.title.en }}
+{% endif %}
+{% endcapture %}
+
+{% capture subtitle %}
+{% if lang == 'ja' %}{{ site.subtitle.ja }}
+{% else %}{{ site.subtitle.en }}
+{% endif %}
+{% endcapture %}
+<html lang="{{ lang }}">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{ page.title }} - {{ title }}</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="site-title"><a href="/{{ lang }}/">{{ title }}</a></h1>
+            <h2 id="site-subtitle">{{ subtitle }}</h2>
+            <hr>
+        </header>
+        <section>
+            <h1 id="page-title">{{ page.title }}</h1>
+            {{ content }}
+        </section>
+        {% if lang != 'ja' %}
+        <aside id="trans">This page uses <a href="https://translate.google.co.jp/" target="_blank">Google Translate</a> and <a href="https://www.deepl.com/translator" target="_blank">DeepL Translate</a>.</aside>
+        {% endif %}
+    </body>
+</html>
