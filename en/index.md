@@ -1,4 +1,4 @@
 ---
 layout: default
-title: Top Page
+title: Welcome
 ---
