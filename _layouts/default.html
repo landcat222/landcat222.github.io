@@ -22,6 +22,11 @@
         <header>
             <h1 id="site-title"><a href="/{{ lang }}/">{{ title }}</a></h1>
             <h2 id="site-subtitle">{{ subtitle }}</h2>
+            {% if lang == 'ja' %}
+            <a class="change-lang" href='{{ page.url | replace_first:lang , "en" }}'>English</a>
+            {% else %}
+            <a class="change-lang" href='{{ page.url | replace_first:lang , "ja" }}'>日本語</a>
+            {% endif %}
             <hr>
         </header>
         <section>
