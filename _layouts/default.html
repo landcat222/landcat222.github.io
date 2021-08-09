@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% assign lang = page.url | replace_first:"/" "" | split:"/" | first %}
+{% assign lang = page.url | replace_first:"/" , "" | split:"/" | first %}
 
 {% capture title %}
 {% if lang == 'ja' %}{{ site.title.ja }}
