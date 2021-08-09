@@ -16,6 +16,17 @@ h1#page-title {
     text-align: center;
 }
 
+a.change-lang {
+    color: white;
+    border: 1px solid #000000;
+    background-color: blue;
+}
+
+a.change-lang:hover {
+    color: black;
+    background-color: cyan;
+}
+
 aside#trans {
     text-align: right;
 }
